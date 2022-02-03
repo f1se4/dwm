@@ -971,7 +971,7 @@ drawbar(Monitor *m)
 		drw_setscheme(drw, scheme[SchemeNorm]);
 		tw = TEXTW(stext) - lrpad + 2; /* 2px right padding */
     sw = TEXTW(stext) - lrpad / 2 + 2;
-		drw_text(drw, m->ww - sw - stw, 0, sw, bh, lrpad / 2 - 2, stext, 0);
+		drw_text(drw, m->ww - tw - stw, 0, sw, bh, lrpad / 2 - 2, stext, 0);
 	}
 
   resizebarwin(m);
